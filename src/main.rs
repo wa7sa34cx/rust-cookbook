@@ -1,3 +1,7 @@
+mod ch01_random;
+
+// use ch01_random;
+
 fn main() {
-    println!("Hello, world!");
+    ch01_random::random_numbers();
 }
