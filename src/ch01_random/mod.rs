@@ -1,5 +1,8 @@
+pub mod distr;
+
 use rand::Rng;
 use rand::distributions::{Distribution, Uniform};
+
 
 // Generate random numbers
 pub fn random_numbers() {
@@ -23,6 +26,7 @@ pub fn within_a_range() {
     println!("Float: {}", rng.gen_range(0.0..10.0));
 }
 
+// Uniform distribution
 pub fn rand_uniform() {
     let mut rng = rand::thread_rng();
     let die = Uniform::from(1..7);
