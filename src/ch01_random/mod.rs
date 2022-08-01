@@ -2,7 +2,7 @@ pub mod distr;
 
 use rand::Rng;
 use rand::distributions::{Distribution, Uniform};
-
+use rand::distributions::Alphanumeric;
 
 // Generate random numbers
 pub fn random_numbers() {
@@ -38,4 +38,14 @@ pub fn rand_uniform() {
             break;
         }
     }
+}
+
+pub fn rand_password() {
+    let rand_string: String = rand::thread_rng()
+        .sample_iter(&Alphanumeric)
+        .take(30)
+        .map(char::from)
+        .collect();
+
+    println!("{}", rand_string);
 }
