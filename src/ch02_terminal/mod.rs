@@ -17,6 +17,6 @@ pub fn ansi() {
         "{}, {} and {}",
         Colour::Yellow.paint("This is colored"),
         Style::new().bold().paint("this is bold"),
-        Colour::Yellow.bold().paint("this is bold and colored")
+        Colour::Yellow.bold().underline().paint("this is bold and colored")
     );
 }
