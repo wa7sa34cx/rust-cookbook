@@ -1,8 +1,8 @@
 pub mod distr;
 
-use rand::Rng;
-use rand::distributions::{Distribution, Uniform};
 use rand::distributions::Alphanumeric;
+use rand::distributions::{Distribution, Uniform};
+use rand::Rng;
 
 // Generate random numbers
 pub fn random_numbers() {

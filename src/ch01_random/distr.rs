@@ -1,6 +1,5 @@
-use rand_distr::{Distribution, Normal, NormalError};
 use rand::thread_rng;
-
+use rand_distr::{Distribution, Normal, NormalError};
 
 pub fn with_distr() -> Result<(), NormalError> {
     let mut rng = thread_rng();
