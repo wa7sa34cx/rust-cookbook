@@ -2,6 +2,7 @@
 
 mod ch01_random;
 mod ch02_terminal;
+mod ch03_concurrency;
 
 use ch01_random::distr;
 
@@ -13,5 +14,9 @@ fn main() {
     // ch01_random::rand_uniform();
     // distr::with_distr().unwrap();
     // ch01_random::rand_password();
-    ch02_terminal::ansi();
+
+    let arr = &[1, 25, -4, 10];
+    let max = ch03_concurrency::find_max(arr).unwrap();
+    println!("{}", max);
+
 }
